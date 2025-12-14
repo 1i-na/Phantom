@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&family=New+Rocker&display=swap');
 
 body {
     display: flex;
@@ -21,6 +21,7 @@ main {
     border: 3px solid #5c5c5c53;
     width: 300px;
     background-image: url("assets/purple_static.jpg");
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.596);
 }
 
 #top-nav {
@@ -39,15 +40,29 @@ main {
     font-size: 15px;
 }
 
+.nav-btn:hover {
+    background-color: #d1a3ff;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #ffffffc5;
+}
+
 #main {
     margin-top: 5px;
     background-color: #3333338a;
     border-radius: 5px;
-    padding: 5px;
+    padding: 7px;
 }
 
 #big-img {
     width: 300px;
+    height: 132.5px;
+    mask-image: url("assets/border.png");
+    mask-size: cover;
+}
+
+#chain {
+    width: 300px;
+    height: 10px;
 }
 
 #text {
@@ -55,6 +70,7 @@ main {
     grid-template-areas:
         "info content content";
     grid-template-columns: 35% 1fr;
+    margin-top: 7px;
 }
 
 #info {
@@ -62,8 +78,10 @@ main {
     width: 100px;
 }
 
-#clock {
+#round-img {
     width: 100px;
+    mask-image: url("assets/clock.png");
+    mask-size: cover;
 }
 
 #idle {
@@ -87,7 +105,24 @@ main {
 }
 
 #home {
-    background-color: #333;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9f9f9f98;
     grid-area: content;
     margin-right: 5px;
+    border-radius: 5px;
+    font-family: "New Rocker", system-ui;
+    color: #252525;
+    margin: 0;
+}
+
+h3 {
+    margin: 10px;
+}
+
+.content-info {
+    font-size: small;
+    font-size: 10px;
 }

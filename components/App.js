@@ -12,6 +12,7 @@ export function App() {
       </section>
       <section id="main">
         <${Img} />
+        <img id="chain" src="assets/skull_chain.gif" alt="chain" />
         <section id="text">
           <${Info} />
           <${Home} />
