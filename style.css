@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: url("assets/gif_static.gif");
+    background-size: cover;
+    font-family: "Asimovian", sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #5c5c5c53;
+    width: 300px;
+    background-image: url("assets/purple_static.jpg");
+}
+
+#top-nav {
+    display: flex;
+    justify-content: right;
+}
+
+.nav-btn {
+    font-family: "Asimovian", sans-serif;
+    margin: 2px;
+    border-radius: 5px;
+    border: 1px solid #5c5c5c53;
+    background-color: rgba(92, 78, 92, 0.662);
+    color: #110016;
+    padding: 2px 5px;
+    font-size: 15px;
+}
+
+#main {
+    margin-top: 5px;
+    background-color: #3333338a;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#big-img {
+    width: 300px;
+}
+
+#text {
+    display: grid;
+    grid-template-areas:
+        "info content content";
+    grid-template-columns: 35% 1fr;
+}
+
+#info {
+    grid-area: info;
+    width: 100px;
+}
+
+#clock {
+    width: 100px;
+}
+
+#idle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 95px;
+}
+
+#name {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.499);
+    margin: 0;
+}
+
+#bio {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.499);
+    margin: 0;
+}
+
+#home {
+    background-color: #333;
+    grid-area: content;
+    margin-right: 5px;
+}
